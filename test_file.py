@@ -13,7 +13,7 @@ fontColor = (0,0,255)
 
 # Add names of the people to this map
 id_map = np.loadtxt('names.txt',dtype = str)
-print(id_map)
+#print(id_map)
 
 
 cam = cv2.VideoCapture(0)
