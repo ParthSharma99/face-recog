@@ -36,7 +36,7 @@ for i in range(len(IDs)):
 recog.train(faces,np.array(IDs))
 # Saving the model
 recog.write('trainingData.yml')
-print(list(ID_map.keys()))
+#print(list(ID_map.keys()))
 np.savetxt("names.txt",np.array(list(ID_map.keys())),fmt = '%s')
 np.savetxt("number.txt",np.array(list(ID_map.values())),fmt = '%s')
 
