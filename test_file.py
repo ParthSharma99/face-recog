@@ -6,14 +6,14 @@ facedetect = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 rec = cv2.face.LBPHFaceRecognizer_create()
 rec.read('trainingData.yml')
 
-
 id = 0
 fontFace = cv2.FONT_HERSHEY_SIMPLEX
 fontScale = 1
 fontColor = (0,0,255)
 
-# Add names of the people to this map,keeping in mind the index should br their user_id used when taking the photos
-id_map = ["Parth","Ishita","Ritu","Pradeep","Parth","Aaditya"]
+# Add names of the people to this map
+id_map = np.loadtxt('names.txt',dtype = str)
+print(id_map)
 
 
 cam = cv2.VideoCapture(0)
